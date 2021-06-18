@@ -59,8 +59,8 @@ alias gstd='git stash drop'
 alias gitskip='git update-index --skip-worktree'
 alias gitnoskip='git update-index --no-skip-worktree'
 
-alias gitpc='git config --local user.email imam.swe@gmail.com; git config --local user.name "Imam Hossain";'
-alias gitwc='git config --global user.email imam.hossain@welldev.io; git config --global user.name "Imam Hossain";'
+alias gitl='git config --local user.name $1; git config --local user.email $2'
+alias gitg='git config --global user.name $1; git config --global user.email $2'
 
 # git search and replace, original_text = $1, replace_text=$2
 alias gsed="git grep -l \$1 | xargs sed '' -e 's/\$1/\$2/g" # find and replace text
